@@ -9,7 +9,7 @@ Try modifying the following parameters and observe the effects:
 2. Learning rate: Try 0.1, 0.5, 1.0, 2.0
 3. Activation functions: Implement ReLU or tanh instead of sigmoid.
 4. Initialization: Try different weight initialization strategies.
-5. # Your experimentation code here
+5. # Your experimentation code here:
 Example: Try with 2 hidden neurons
 nn_small = TwoLayerNetwork(input_size=2, hidden_size=2, output_size=1) losses_small = nn_small.train(X_train, y_train, epochs=10000, learning_rate=1.0)
 print("Accuracy with 2 hidden neurons:", np.mean(nn_small.predict(X_train).flatten() == y_train))
