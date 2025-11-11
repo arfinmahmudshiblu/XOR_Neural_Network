@@ -11,7 +11,7 @@ Learning rate: Try 0.1, 0.5, 1.0, 2.0
 Activation functions: Implement ReLU or tanh instead of sigmoid
 Initialization: Try different weight initialization strategies
 
-My experimentation code here:
+# My experimentation code here:
 I have tried with 2,3,6,8 hidden neurons hidden_sizes = [2, 3, 4, 8] learning_rates = [0.1, 0.5, 1.0, 2.0] activations = ['sigmoid', 'relu', 'tanh'] inits = ['xavier', 'he', 'normal']
 for h in hidden_sizes: for lr in learning_rates: for act in activations: for init in inits: print(f"\nHidden={h}, LR={lr}, Act={act}, Init={init}") model = TwoLayerNetwork(input_size=2, hidden_size=h, output_size=1, activation=act, init=init) losses = model.train(X_train, y_train, epochs=10000, lr=lr) preds = model.predict(X_train)
 
